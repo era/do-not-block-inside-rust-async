@@ -1,0 +1,17 @@
+[package]
+name = "common-mistake"
+version = "0.1.0"
+edition = "2021"
+
+
+[[bin]]
+name = "problem"
+path = "src/problem/main.rs"
+
+[[bin]]
+name = "solution"
+path = "src/solution/main.rs"
+
+[dependencies]
+crossbeam-channel = "0.5.14"
+tokio = { version = "1.42.0", features = ["full"] }
